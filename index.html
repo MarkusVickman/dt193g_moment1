@@ -3,7 +3,12 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Portfolio MV</title>
+  <title>MV | Hem</title>
+
+<!--ICON font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,20 +18,36 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
 </head>
 <body>
-  <!--<nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+  <!--<nav>
+    <div class="nav-wrapper white darken-3">
+      <a href="#" class="brand-logo">MW</a>
+      <ul id="nav-mobile" class="right show-on-med-and-down">
+        <li><a href="materialize.html">Materialize</a></li>
+        <li><a href="bulma/bulma.html">Bulma</a></li>
+        <li><a href="publish.html">Publisering</a></li>
       </ul>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
+  </nav>-->
+  
+  <nav class="nav-extended white">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo" style="font-family: Rubik Wet Paint">MV</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="materialize.html">Materialize</a></li>
+        <li><a href="bulma/bulma.html">Bulma</a></li>
+        <li><a href="publish.html">Publisering</a></li>
+      </ul>
+    </div>
+    
   </nav>
--->
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="materialize.html">Materialize</a></li>
+    <li><a href="bulma/bulma.html">Bulma</a></li>
+    <li><a href="publish.html">Publisering</a></li>
+  </ul>
+
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
@@ -35,7 +56,7 @@
         <br><br>
         <h1 class="header center white-text text-lighten-2 ">Markus Vickman</h1>
         <div class="row center">
-          <h5 class="header col s12 light">En junior webbutvecklares portfolio</h5>
+          <p class="flow-text col s12 light">Moment 1 - Fullstack-utveckling med ramverk</p>
         </div>
         <!--<div class="row center">
           <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
@@ -49,104 +70,37 @@
 
   
 
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <a href="https://highcoast-college.netlify.app/" class="black-text">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">school</i></h2>
-            <h5 class="center">Angular</h5>
-
-            <p class="light">En modern webbplats för en högskola skapad i Angular med programmeringsspråket TypeScript.</p>
-          </div>        
-        </div>
-      </a>
-
-        <a href="https://grillhornan.netlify.app/" class="black-text">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">backup</i></h2>
-            <h5 class="center">Node.js och databaser</h5>
-
-            <p class="light">En restaurangwebbplats med ett tillhörande admingränsitt som ansluten till en mongoDb-databas via en node.js express-server.</p>
+        <div class="container">
+          <div class="row center">
+            <h3 class="header col s12 bold">Uppgift</h3>
+            <p class="flow-text col s12 light">Moment 1 i kursen DT193g går ut på att lära sig om och testa minst två CSS-ramverk. Del två i uppgiften är att publicera webbplatsen med CI/CD.</p>
           </div>
-        </div>
-      </a>
-
-        <a href="https://charts-map.netlify.app/diagram" class="black-text">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">pie_chart</i></h2>
-            <h5 class="center">JavaScript-bibliotek</h5>
-
-            <p class="light">Implementering av JavaScript-bibliotek för kartor och diagram.</p>
-          </div>
-        </div>
-      </a>
       </div>
 
-    </div>
-  </div>
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h3 class="header col s12 bold">Mina kunskaper</h3>
-          <h5 class="header col s12 light">Exempel på några av kunskaperna jag har skaffat mig på Mittuniversitetet.</h5>
+          <h3 class="header col s12 bold">Materialize</h3>
+          <p class="flow-text col s12 light">Det första ramverket jag fastnade för var materialize. Materialize har jag använt för att skapa startsidan, materialize-sidan och publish-sidan på denna webbplats.</p>
+        </div>
+        <div class="row center">
+          <h3 class="header col s12 bold">Bulma</h3>
+          <p class="flow-text col s12 light">Bulma såg ut som ett spännande CSS-ramverk. Jag såg att flera svenska företag använder Bulma och ville därför testa att använda det. Bulma används för undersidan bulma.</p>
         </div>
       </div>
     </div>
     <div class="parallax"><img src="background1.jpg" alt="Kopplingar på baksidan av ett kretskort."></div>
   </div>
 
-
-
   <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <a href="https://bluff-fardtjanst.netlify.app/" class="black-text">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">accessibility</i></h2>
-            <h5 class="center">WCAG, DOS-lagen</h5>
-
-            <p class="light">En tillgänglighetsanpassad webbplats år ett fiktivt färdtjänstbolag enligt WCAG och DOS-lagen.</p>
-          </div>
-        </div>
-      </a>
-
-        <a href="https://allvaders-discgolf.netlify.app/" class="black-text">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">image</i></h2>
-            <h5 class="center">Bildhantering</h5>
-
-            <p class="light">Testwebbplats där olika bildformat och komprimeringar har används.</p>
-          </div>
-        </div>
-      </a>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">desktop_windows</i></h2>
-            <h5 class="center">C# .NET MAUI</h5>
-
-            <p class="light">Med programmeringsspråket C# skapades en .NET MAUI applikation för Android och Windows. Applikationen är till för att hjälpa barn och ungdomar att lära sig 
-              huvudräkning. Här kan du ladda ner applikationen för Windows.</p>
-            <a class="waves-effect waves-light btn" href="/TimedMath_complete_application.zip"><i class="material-icons right">file_download</i>Ladda ner</a>
-          </div>
-        </div>
-
-      </div>
-    
+    <div class="row center">
+      <h3 class="header col s12 bold">Publicering</h3>
+      <p class="flow-text col s12 light">För publicering skulle vi göra en icke ftp publicering. Eftersom att vi redan använt tjänster som Github-pages, Netlify och Render samt att jag har publicerat på Azure valde jag en egen lösning som jag hoppas är godkänd. Men mer om detta på undersidan om publicering. och jag hoppas att det är en godkänd lösning.</p>
     </div>
-  </div>
+</div>
+
 
 
   <div class="parallax-container valign-wrapper">
