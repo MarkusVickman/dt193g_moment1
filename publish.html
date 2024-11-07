@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MV | Publicering</title>
 
-<!--ICON font-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+  <!--ICON font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link rel="icon" type="image/x-icon" sizes="16x16" href="favicon.ico?ver=2.0">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
 </head>
+
 <body>
-  
+
   <nav class="nav-extended white">
     <div class="nav-wrapper">
-      <a href="/index.html" class="brand-logo" style="font-family: Rubik Wet Paint">MV</a>
+      <a href="start.html" class="brand-logo" style="font-family: Rubik Wet Paint">MV</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="materialize.html">Materialize</a></li>
         <li><a href="bulma/bulma.html">Bulma</a></li>
         <li><a href="publish.html">Publisering</a></li>
       </ul>
-    </div>    
+    </div>
   </nav>
 
   <ul class="sidenav" id="mobile-demo">
@@ -56,19 +58,26 @@
     <div class="parallax"><img src="background2.jpg" alt="Vy över Sundsvall från Norraberget"></div>
   </div>
 
-  
 
-        <div class="container">
-          <div class="row center">
-            <h3 class="header col s12 bold">Plattform</h3>
-            <p class="flow-text col s12 light">Jag valde att hosta webbplatsen hos <a href="https://www.inleed.se">inleed</a>. Lösningen jag valde vara att betala för webbhotell 49kr/månad och köpa till en domän <a href="https://www.markuswebb.se">markuswebb.se</a> för 79kr/år. 
-             I tjänsten ingår 10Gb lagring, obegränsat antal webbsidor och SQL-databaser. Utöver statiska webbplatser går den att styra med SSH, har mailserver och stöd för bland annat 
-            Node.js, Python App och Wordpress. </p>
-           <p class="flow-text col s12 light">Det enklaste här är att publicera webbplatser med vanlig ftp eller tjänstens grafiska interface. Detta är inte godkänt för kursen och eftersom att jag redan provat Render, Azure och Netlify ville jag testa något nytt. Då valde jag mellan 
-          att sätta mig in i SSH för att styra webbhosten eller att ändå ansluta till ftp men genom en CI/CD-pipline. Jag valde att skapa en CI/CD som automatisk skickar över filerna/uppdaterar webbplatsen vid commit till webbplatsen GitHub-repo. 
-        </p>
-          </div>
-      </div>
+
+  <div class="container">
+    <div class="row center">
+      <h3 class="header col s12 bold">Plattform</h3>
+      <p class="flow-text col s12 light">Jag valde att hosta webbplatsen hos <a href="https://www.inleed.se">inleed</a>.
+        Lösningen jag valde vara att betala för webbhotell 49kr/månad och köpa till en domän <a
+          href="https://www.markuswebb.se">markuswebb.se</a> för 79kr/år.
+        I tjänsten ingår 10Gb lagring, obegränsat antal webbsidor och SQL-databaser. Utöver statiska webbplatser går den
+        att styra med SSH, har mailserver och stöd för bland annat
+        Node.js, Python App och Wordpress. </p>
+      <p class="flow-text col s12 light">Det enklaste här är att publicera webbplatser med vanlig ftp eller tjänstens
+        grafiska interface. Detta är inte godkänt för kursen och eftersom att jag redan provat Render, Azure och Netlify
+        ville jag testa något nytt. Då valde jag mellan
+        att sätta mig in i SSH för att styra webbhosten eller att ändå ansluta till ftp men genom en CI/CD-pipline. Jag
+        valde att skapa en CI/CD som automatisk skickar över filerna/uppdaterar webbplatsen vid commit till webbplatsen
+        GitHub-repo.
+      </p>
+    </div>
+  </div>
 
 
   <div class="parallax-container valign-wrapper">
@@ -76,20 +85,55 @@
       <div class="container">
         <div class="row center">
           <h3 class="header col s12 bold">Tillvägagångsätt</h3>
-          <p class="flow-text col s12 light">För att mina commits automatisk skulle uppdatera webbplatsen behövde jag först skapa en ny ftp-användare till min inleedlagring. Detta ställdes in så att användaren endast har tillgång 
-            till public_html-mappen. Efter det så lades följande inställningar för ftp till i Repository secrets på Github: FTP_HOST, FTP_PASSWORD och FTP_USERNAME.</p>
-          <p class="flow-text col s12 light">Jag skapade katalogerna och filen .github/workflows/deploy.yml i github-repot. För att skapa koden i denna fil använde jag en guide. Jag behövde bara ändra action/checkout för att match node20 
-            och ändra sökväg i ftp-servern där innehållet ska uppdateras. Denna .yml-fil används av Github-actions som ett workflow. Varje gång det pushas till main-branchen ansluter node.js till min ftp-server och kör skript-filen deploy.sh som jag går igenom nedan. 
+          <!--<p class="flow-text col s12 light">För att mina commits automatisk skulle uppdatera webbplatsen behövde jag
+            först skapa en ny ftp-användare till min inleedlagring. Detta ställdes in så att användaren endast har
+            tillgång
+            till public_html-mappen. Efter det så lades följande inställningar för ftp till i Repository secrets på
+            Github: FTP_HOST, FTP_PASSWORD och FTP_USERNAME.</p>
+          <p class="flow-text col s12 light">Jag skapade katalogerna och filen .github/workflows/deploy.yml i
+            github-repot. För att skapa koden i denna fil använde jag en guide. Jag behövde bara ändra action/checkout
+            för att match node20
+            och ändra sökväg i ftp-servern där innehållet ska uppdateras. Denna .yml-fil används av Github-actions som
+            ett workflow. Varje gång det pushas till main-branchen ansluter node.js till min ftp-server och kör
+            skript-filen deploy.sh som jag går igenom nedan.
           </p>
-          <p class="flow-text col s12 light">Filen deploy.sh skapades i repots root-katalog. Denna skript-fil jämför och lägger till nya filer samt byter ut filer som blivit ändrade. Så det ända jag behöver göra nu för att uppdatera webbplatsen 
-            är att göra en commit till main-branchen i projektet. 
+          <p class="flow-text col s12 light">Filen deploy.sh skapades i repots root-katalog. Denna skript-fil jämför och
+            lägger till nya filer samt byter ut filer som blivit ändrade. Så det ända jag behöver göra nu för att
+            uppdatera webbplatsen
+            är att göra en commit till main-branchen i projektet.
             <a href="https://github.com/MarkusVickman/dt193g_moment1/">Besök Github-repot</a>
-          </p>
-        </div>      
+          </p>-->
+        </div>
       </div>
     </div>
     <div class="parallax"><img src="background1.jpg" alt="Kopplingar på baksidan av ett kretskort."></div>
   </div>
+
+
+
+  <div class="container">
+    <div class="row center">
+      <p class="flow-text col s12 light">För att mina commits automatisk skulle uppdatera webbplatsen behövde jag
+        först skapa en ny ftp-användare till min inleedlagring. Detta ställdes in så att användaren endast har
+        tillgång
+        till public_html-mappen. Efter det så lades följande inställningar för ftp till i Repository secrets på
+        Github: FTP_HOST, FTP_PASSWORD och FTP_USERNAME.</p>
+      <p class="flow-text col s12 light">Jag skapade katalogerna och filen .github/workflows/deploy.yml i
+        github-repot. För att skapa koden i denna fil använde jag en guide. Jag behövde bara ändra action/checkout
+        för att match node20
+        och ändra sökväg i ftp-servern där innehållet ska uppdateras. Denna .yml-fil används av Github-actions som
+        ett workflow. Varje gång det pushas till main-branchen ansluter node.js till min ftp-server och kör
+        skript-filen deploy.sh som jag går igenom nedan.
+      </p>
+      <p class="flow-text col s12 light">Filen deploy.sh skapades i repots root-katalog. Denna skript-fil jämför och
+        lägger till nya filer samt byter ut filer som blivit ändrade. Så det ända jag behöver göra nu för att
+        uppdatera webbplatsen
+        är att göra en commit till main-branchen i projektet.
+        <a href="https://github.com/MarkusVickman/dt193g_moment1/">Besök Github-repot</a>
+      </p>
+    </div>
+  </div>
+
 
 
 
@@ -98,7 +142,8 @@
       <div class="row">
         <div class="center">
           <h5 class="white-text">Kontakta mig</h5>
-          <a class="white-text" href="mailto:markus.vickman@hotmail.com"><i class="small material-icons">mail</i></a><br>
+          <a class="white-text" href="mailto:markus.vickman@hotmail.com"><i
+              class="small material-icons">mail</i></a><br>
           <a class="white-text" href="mailto:markus.vickman@hotmail.com">markus.vickman@hotmail.com</a>
 
         </div>
@@ -109,7 +154,7 @@
       </div>
     </div>
     <div class="footer-copyright">
- 
+
     </div>
   </footer>
 
@@ -119,5 +164,6 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
-  </body>
+</body>
+
 </html>
