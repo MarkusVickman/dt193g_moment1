@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MV | Materialize</title>
 
-<!--ICON font-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+  <!--ICON font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" sizes="16x16" href="favicon.ico?ver=2.0">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
 </head>
+
 <body>
 
+  <!-- Main menu -->
   <nav class="nav-extended white">
     <div class="nav-wrapper">
       <a href="start.html" class="brand-logo" style="font-family: Rubik Wet Paint">MV</a>
@@ -28,18 +31,20 @@
         <li><a href="bulma/bulma.html">Bulma</a></li>
         <li><a href="publish.html">Publisering</a></li>
       </ul>
-    </div>    
+    </div>
   </nav>
 
+  <!-- Small screen menu -->
   <ul class="sidenav" id="mobile-demo">
     <li><a href="materialize.html">Materialize</a></li>
     <li><a href="bulma/bulma.html">Bulma</a></li>
     <li><a href="publish.html">Publisering</a></li>
   </ul>
 
+  <!-- Header image with parallax viewing and intro text -->
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
-      <div class="container">
+      <section class="container">
         <div class="row center">
         </div>
         <br><br>
@@ -47,53 +52,55 @@
         <div class="row center">
           <h5 class="header col s12 light">CSS-ramverk baserat på Googles Material Design</h5>
         </div>
-        <!--<div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>-->
         <br><br>
-      </div>
+      </section>
     </div>
     <div class="parallax"><img src="background2.jpg" alt="Vy över Sundsvall från Norraberget"></div>
   </div>
 
-  
+  <!-- Section with article for text-->
+  <section class="container">
+    <div class="row center">
+      <h3 class="header col s12 bold">Om</h3>
+      <p class="flow-text col s12 light">Materialize är ett CSS-ramverk för snabb styling av webbplatser. Ramverket
+        bygger på Material Design som är utvecklat av Google. </p>
+      <h3 class="col s12 light">Fördelar och nackdelar</h3>
+      <p class="flow-text col s12 light">Jag upplevde stora fördelar med att använda Materialize. Det var ofta enkelt
+        och intuitivt att ändra enklare styling utan att behöva leta i dokumentationen. För styling
+        läggs klasser till i elementens-taggar på html-sidan. Det var också väldigt smidigt att komma då jag kunde ladda
+        ner en mapp med JavaScript och CSS. Det räckte sedan att länka ihop HTML till alla CSS och
+        JavaScript-filer enligt instruktionerna på sidan.
+      </p>
+      <p class="flow-text col s12 light">Jag har inte upplevt några större nackdelar än så länge med att använda
+        Materialize.</p>
+      <p>Läs mer på <a href="https://materializecss.com/">materialize.com</a></p>
+    </div>
+  </section>
 
-        <div class="container">
-          <div class="row center">
-            <h3 class="header col s12 bold">Om</h3>
-            <p class="flow-text col s12 light">Materialize är ett CSS-ramverk för snabb styling av webbplatser. Ramverket bygger på Material Design som är utvecklat av Google. </p>
-            <h3 class="col s12 light">Fördelar och nackdelar</h3>
-            <p class="flow-text col s12 light">Jag upplevde stora fördelar med att använda Materialize. Det var ofta enkelt och intuitivt att ändra enklare styling utan att behöva leta i dokumentationen. För styling 
-              läggs klasser till i elementens-taggar på html-sidan. Det var också väldigt smidigt att komma då jag kunde ladda ner en mapp med JavaScript och CSS. Det räckte sedan att länka ihop HTML till alla CSS och 
-              JavaScript-filer enligt instruktionerna på sidan. 
-            </p>
-            <p class="flow-text col s12 light">Jag har inte upplevt några större nackdelar än så länge med att använda Materialize.</p>
-            <p>Läs mer på <a href="https://materializecss.com/">materialize.com</a></p>
-          </div>
-      </div>
-
-
+  <!-- Section with article for text within in a parallaxing image-->
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
-        <div class="row center">
+        <section class="row center">
           <h3 class="header col s12 bold">Tabeller och formulär</h3>
-          <p class="flow-text col s12 light">Det var enkelt och tydligt att implementera tabeller och formulär med Materialize.</p>
-        </div>
-    </div>
+          <p class="flow-text col s12 light">Det var enkelt och tydligt att implementera tabeller och formulär med
+            Materialize.</p>
+        </section>
+      </div>
     </div>
     <div class="parallax"><img src="background1.jpg" alt="Kopplingar på baksidan av ett kretskort."></div>
   </div>
 
+  <!-- table element -->
   <div class="container">
     <div class="row center">
       <table class="highlight centered ">
         <thead>
           <tr>
-              <th>Name</th>
-              <th>Destination</th>
-              <th>Avbokningsbar</th>
-              <th>Övrigt</th>
+            <th>Name</th>
+            <th>Destination</th>
+            <th>Avbokningsbar</th>
+            <th>Övrigt</th>
           </tr>
         </thead>
 
@@ -125,77 +132,61 @@
         </tbody>
       </table>
     </div>
-</div>
+  </div>
 
-<div class="container">
-<div class="row">
-  <form class="col s12">
+  <!-- Forms element -->
+  <div class="container">
     <div class="row">
-      <div class="input-field col s12">
-        <input placeholder="Text" id="first_name" type="text" class="validate" required>
-        <label for="first_name">Namn</label>
-      </div>
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="Text" id="first_name" type="text" class="validate" required>
+            <label for="first_name">Namn</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <select required class="validate">
+              <option value="" disabled selected>Destination</option>
+              <option value="1">Kreta</option>
+              <option value="2">Istanbul</option>
+              <option value="3">Singapore</option>
+              <option value="4">Andorra</option>
+            </select>
+            <label>Materialize Select</label>
+          </div>
+        </div>
+        <div class="row">
+          <p>
+            <label>
+              <input type="checkbox">
+              <span>Avbokningsbar</span>
+            </label>
+          </p>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">Textarea</label>
+          </div>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
     </div>
-    <div class="row">
-      <div class="input-field col s12">
-        <select required class="validate">
-          <option value="" disabled selected>Destination</option>
-          <option value="1">Kreta</option>
-          <option value="2">Istanbul</option>
-          <option value="3">Singapore</option>
-          <option value="4">Andorra</option>
-        </select>
-        <label>Materialize Select</label>
-      </div>
-    </div>
+  </div>
+  <br><br>
 
-    <div class="row">
-    <p>
-      <label>
-        <input type="checkbox"  />
-        <span>Avbokningsbar</span>
-      </label>
-    </p>
-    </div>
-
-    <div class="row">
-      <div class="input-field col s12">
-        <textarea id="textarea1" class="materialize-textarea"></textarea>
-        <label for="textarea1">Textarea</label>
-      </div>
-    </div>
-    </div>
-         
-  
-    <button class="btn waves-effect waves-light" type="submit" name="action" action="#">Submit
-      <i class="material-icons right">send</i>
-    </button>
-  
-
-
-
-  </form>
-</div>
-</div>
-
-
-
-
-
-
-
-
-<br><br>
-
-
+  <!-- Footer with email mail:to -->
   <footer class="page-footer grey darken-3">
     <div class="container">
       <div class="row">
         <div class="center">
           <h5 class="white-text">Kontakta mig</h5>
-          <a class="white-text" href="mailto:markus.vickman@hotmail.com"><i class="small material-icons">mail</i></a><br>
+          <a class="white-text" href="mailto:markus.vickman@hotmail.com"><i
+              class="small material-icons">mail</i></a><br>
           <a class="white-text" href="mailto:markus.vickman@hotmail.com">markus.vickman@hotmail.com</a>
-
         </div>
         <div class="col l3 s12">
         </div>
@@ -204,21 +195,20 @@
       </div>
     </div>
     <div class="footer-copyright">
- 
     </div>
   </footer>
-
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+
   <!--Script för att select ska fungera i formuläret-->
   <script>
-    $(document).ready(function(){
-    $('select').formSelect();
-  });
+    $(document).ready(function () {
+      $('select').formSelect();
+    });
   </script>
+</body>
 
-  </body>
 </html>
