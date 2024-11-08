@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MV | Bulma</title>
 
 
-<!--ICON font-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+  <!--ICON font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/bulma.css" type="text/css" rel="stylesheet"/>
+  <link href="css/bulma.css" type="text/css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" sizes="16x16" href="../favicon.ico?ver=2.0">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
 </head>
+
 <body>
 
-
-
+  <!-- Main nav -->
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a href="../start.html" class="navbar-item" style="font-family: Rubik Wet Paint; font-size: 30px;">MV</a>
- 
+
+      <!-- Mobile menu -->
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -32,193 +34,181 @@
         <span aria-hidden="true"></span>
       </a>
     </div>
-  
+
+    <!-- Main menu -->
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="/materialize.html">
+        <a class="navbar-item" href="../materialize.html">
           Materialize
         </a>
-  
         <a class="navbar-item" href="bulma.html">
           Bulma
         </a>
-
-        <a class="navbar-item" href="/publish.html">
+        <a class="navbar-item" href="../publish.html">
           Publicering
         </a>
-  
-          </div>
-        </div>
       </div>
-
     </div>
   </nav>
 
-
+  <!-- Text on top of parallaxing image -->
   <section class="hero is-medium is-link" style="background-image: url('/background2.jpg');">
-
     <div class="hero-body">
-      <p class="title">Bulma</p>
+      <h3 class="title">Bulma</h3>
       <p class="subtitle">CSS-ramverket Bulma för att enkelt styla direkt i HTML-koden</p>
     </div>
   </section>
 
+  <!-- Text section -->
   <section class="section">
     <h1 class="title">Om</h1>
     <h2 class="subtitle">
-      Bulma är ett CSS-ramverk för att styla webbplatser. Dess kod finns i CSS, CSS minifierad 
-      eller SCSS. SCSS är bra att använda ifall behov finns att ändra i dess ursprungliga styling. Bulma innehåller 
-      enbart kod för styling och ingen tillhörande JavaScript följer med. Det finns däremot några JavaScript exempel 
+      Bulma är ett CSS-ramverk för att styla webbplatser. Dess kod finns i CSS, CSS minifierad
+      eller SCSS. SCSS är bra att använda ifall behov finns att ändra i dess ursprungliga styling. Bulma innehåller
+      enbart kod för styling och ingen tillhörande JavaScript följer med. Det finns däremot några JavaScript exempel
       i documentationen.
     </h2>
   </section>
 
-
-
+  <!-- Text section -->
   <section class="section">
     <h1 class="title">Fördelar och nackdelar</h1>
     <h2 class="subtitle">
-      Styling av webbsidan gick väldigt smidigt med Bulma. Dokumentationen var strukturerad annorlunda än den hos Materialize 
-      så det tog en stund att komma igång. Jag tycker att resultatet blev väldigt snyggt och det finns även stor möjlighet att anpassa utseende. 
-      Jag ser inte några större nackdelar, men det hade underlättat med färdiga sidtemplates och att de hade mer egen JavaScript.  
+      Styling av webbsidan gick väldigt smidigt med Bulma. Dokumentationen var strukturerad annorlunda än den hos
+      Materialize
+      så det tog en stund att komma igång. Jag tycker att resultatet blev väldigt snyggt och det finns även stor
+      möjlighet att anpassa utseende.
+      Jag ser inte några större nackdelar, men det hade underlättat med färdiga sidtemplates och att de hade mer egen
+      JavaScript.
     </h2>
     <p>Läs mer på <a href="https://bulma.io/">bulma.io </a></p>
   </section>
 
 
-
+  <!-- Section with table and form -->
   <section class="section">
     <h1 class="title">Tabeller och formulär</h1>
     <h2 class="subtitle">
-      Det var enkelt att implementera formulär och tabeller med Bulma. Man plockar de delar som man vill ha 
-      ifrån färdiga komponenter. Jag gjorde dock om tabellen eftersom att den hade otydlig stuktur men den använder 
+      Det var enkelt att implementera formulär och tabeller med Bulma. Man plockar de delar som man vill ha
+      ifrån färdiga komponenter. Jag gjorde dock om tabellen eftersom att den hade otydlig stuktur men den använder
       Bulmas styling.
     </h2>
 
-  <div class="box container is-max-desktop">
-  <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-    <thead>
-      <tr>
-          <th>Name</th>
-          <th>Destination</th>
-          <th>Avbokningsbar</th>
-          <th>Övrigt</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr>
-        <td>Anna</td>
-        <td>Kreta</td>
-        <td>Nej</td>
-        <td>Extra baggage</td>
-      </tr>
-      <tr>
-        <td>Alan</td>
-        <td>Singapore</td>
-        <td>Nej</td>
-        <td>Hund</td>
-      </tr>
-      <tr>
-        <td>Markus</td>
-        <td>Andorra</td>
-        <td>Ja</td>
-        <td>Cykel</td>
-      </tr>
-      <tr>
-        <td>Sara</td>
-        <td>Istanbul</td>
-        <td>Nej</td>
-        <td>Mat på flyget</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-
-
-
-<div class="box container is-max-desktop">
-  <form>
-  <div class="field">
-    <label class="label">Namn</label>
-    <div class="control">
-      <input class="input" type="text" placeholder="Text input" required>
+    <!-- Table element -->
+    <div class="box container is-max-desktop">
+      <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Destination</th>
+            <th>Avbokningsbar</th>
+            <th>Övrigt</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Anna</td>
+            <td>Kreta</td>
+            <td>Nej</td>
+            <td>Extra baggage</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Singapore</td>
+            <td>Nej</td>
+            <td>Hund</td>
+          </tr>
+          <tr>
+            <td>Markus</td>
+            <td>Andorra</td>
+            <td>Ja</td>
+            <td>Cykel</td>
+          </tr>
+          <tr>
+            <td>Sara</td>
+            <td>Istanbul</td>
+            <td>Nej</td>
+            <td>Mat på flyget</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </div>
-  
-  <div class="field">
-    <label class="label">Destination</label>
-    <div class="control">
-      <div class="select">
-        <select required>
-          <option value="" disabled selected>Destination</option>
-          <option value="1">Kreta</option>
-          <option value="2">Istanbul</option>
-          <option value="3">Singapore</option>
-          <option value="4">Andorra</option>
-        </select>
-      </div>
+
+    <!-- Form element -->
+    <div class="box container is-max-desktop">
+      <form>
+        <div class="field">
+          <label class="label">Namn</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Text input" required>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Destination</label>
+          <div class="control">
+            <div class="select">
+              <select required>
+                <option value="" disabled selected>Destination</option>
+                <option value="1">Kreta</option>
+                <option value="2">Istanbul</option>
+                <option value="3">Singapore</option>
+                <option value="4">Andorra</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox">
+              Avbokningsbar
+            </label>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Övrigt</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Textarea"></textarea>
+          </div>
+        </div>
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link">Submit</button>
+          </div>
+        </div>
+      </form>
     </div>
-  </div>
-    
-  <div class="field">
-    <div class="control">
-      <label class="checkbox">
-        <input type="checkbox">
-        Avbokningsbar</a>
-      </label>
+  </section>
+
+  <!-- Footer with email mail:to -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Av <strong>Markus Vickman</strong>
+      </p>
+      <p>
+        Kontakta mig <br><a href="mailto:markus.vickman@hotmail.com"><i class="small material-icons">mail</i></a>
+      </p>
     </div>
-  </div>
-
-  <div class="field">
-    <label class="label">Övrigt</label>
-    <div class="control">
-      <textarea class="textarea" placeholder="Textarea"></textarea>
-    </div>
-  </div>
-
-      
-  <div class="field is-grouped">
-    <div class="control">
-      <button class="button is-link">Submit</button>
-    </div>
-  </div>
-</form>
-</div>
-</section>
+  </footer>
 
 
-<footer class="footer">
-  <div class="content has-text-centered">
-    <p>
-      Av <strong>Markus Vickman</strong> 
-    </p>
-    <p>
-      Kontakta mig <br><a href="mailto:markus.vickman@hotmail.com"><i class="small material-icons">mail</i></a>
-    </p>
-  </div>
-</footer>
-
-
-
-
-
-  <!--  Scripts-->
+  <!-- jQuery and script for mobile menu -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script> 
-  $(document).ready(function() {
+  <script>
+    $(document).ready(function () {
 
-// Check for click events on the navbar burger icon
-$(".navbar-burger").click(function() {
+      // Check for click events on the navbar burger icon
+      $(".navbar-burger").click(function () {
 
-    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-    $(".navbar-burger").toggleClass("is-active");
-    $(".navbar-menu").toggleClass("is-active");
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
 
-});
-});
-</script>
+      });
+    });
+  </script>
 
 </body>
+
 </html>

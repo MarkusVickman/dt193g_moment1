@@ -1,34 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MV | Hem</title>
 
-<!--ICON font-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+  <!--ICON font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" sizes="16x16" href="favicon.ico?ver=2.0">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
 </head>
+
 <body>
-  <!--<nav>
-    <div class="nav-wrapper white darken-3">
-      <a href="#" class="brand-logo">MW</a>
-      <ul id="nav-mobile" class="right show-on-med-and-down">
-        <li><a href="materialize.html">Materialize</a></li>
-        <li><a href="bulma/bulma.html">Bulma</a></li>
-        <li><a href="publish.html">Publisering</a></li>
-      </ul>
-    </div>
-  </nav>-->
-  
+
+  <!-- Main menu -->
   <nav class="nav-extended white">
     <div class="nav-wrapper">
       <a href="#" class="brand-logo" style="font-family: Rubik Wet Paint">MV</a>
@@ -39,17 +32,18 @@
         <li><a href="publish.html">Publisering</a></li>
       </ul>
     </div>
-    
   </nav>
 
+  <!-- Small screen menu -->
   <ul class="sidenav" id="mobile-demo">
     <li><a href="materialize.html">Materialize</a></li>
     <li><a href="bulma/bulma.html">Bulma</a></li>
     <li><a href="publish.html">Publisering</a></li>
   </ul>
 
+  <!-- Header image with parallax viewing and intro text -->
   <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
+    <section class="section no-pad-bot">
       <div class="container">
         <div class="row center">
         </div>
@@ -58,110 +52,137 @@
         <div class="row center">
           <p class="flow-text col s12 light">Moment 1 - Fullstack-utveckling med ramverk</p>
         </div>
-        <!--<div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>-->
         <br><br>
-
       </div>
-    </div>
+    </section>
     <div class="parallax"><img src="background2.jpg" alt="Vy över Sundsvall från Norraberget"></div>
   </div>
 
-  
+  <!-- Container with a text section -->
+  <div class="container">
+    <section class="row center">
+      <h3 class="header col s12 bold">Uppgift</h3>
+      <p class="flow-text col s12 light">Moment 1 i kursen DT193g går ut på att lära sig om och testa minst två
+        CSS-ramverk. Del två i uppgiften är att publicera webbplatsen med CI/CD.</p>
+    </section>
+  </div>
 
-        <div class="container">
-          <div class="row center">
-            <h3 class="header col s12 bold">Uppgift</h3>
-            <p class="flow-text col s12 light">Moment 1 i kursen DT193g går ut på att lära sig om och testa minst två CSS-ramverk. Del två i uppgiften är att publicera webbplatsen med CI/CD.</p>
-          </div>
-      </div>
-
-
+  <!-- Container with a heading and parallaxing image -->
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h3 class="header col s12 bold">Materialize</h3>
-          <p class="flow-text col s12 light">Det första ramverket jag fastnade för var materialize. Materialize har jag använt för att skapa startsidan, materialize-sidan och publish-sidan på denna webbplats.</p>
-        </div>
-        <div class="row center">
-          <h3 class="header col s12 bold">Bulma</h3>
-          <p class="flow-text col s12 light">Bulma såg ut som ett spännande CSS-ramverk. Jag såg att flera svenska företag använder Bulma och ville därför testa att använda det. Bulma används för undersidan bulma.</p>
+          <h3 class="header col s12 bold">Ramverk</h3>
         </div>
       </div>
     </div>
     <div class="parallax"><img src="background1.jpg" alt="Kopplingar på baksidan av ett kretskort."></div>
   </div>
 
+  <!-- Section with a two articles -->
   <div class="container">
-    <div class="row center">
-      <h3 class="header col s12 bold">Publicering</h3>
-      <p class="flow-text col s12 light">För publicering skulle vi göra en icke ftp publicering. Eftersom att vi redan använt tjänster som Github-pages, Netlify och Render samt att jag har publicerat på Azure valde jag en egen lösning som jag hoppas är godkänd. Men mer om detta på undersidan om publicering. och jag hoppas att det är en godkänd lösning.</p>
-    </div>
-</div>
-
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h3 class="header col s12 bold">Om mig</h3>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background3.jpg" alt="En bild av mig själv när jag vilar i solen."></div>
+    <article class="row center">
+      <h3 class="header col s12 bold">Materialize</h3>
+      <p class="flow-text col s12 light">Det första ramverket jag fastnade för var materialize. Materialize har jag
+        använt för att skapa startsidan, materialize-sidan och publish-sidan på denna webbplats.</p>
+    </article>
+    <article class="row center">
+      <h3 class="header col s12 bold">Bulma</h3>
+      <p class="flow-text col s12 light">Bulma såg ut som ett spännande CSS-ramverk. Jag såg att flera svenska
+        företag använder Bulma och ville därför testa att använda det. Bulma används för undersidan bulma.</p>
+    </article>
   </div>
 
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">functions</i></h2>
-            <h5 class="center">Teknikprogrammet gymnasiet</h5>
-
-            <p class="light">Jag läste teknikprogrammet på Gudlav Bilderskolan i Sollefteå. I programmet ingick mycket matematik och hade en tydlig datateknisk inriktning.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">YH-Energiteknik</h5>
-
-            <p class="light">Efter gymnasiet läste jag en två-årig YH-utbildning till drifttekniker för kraft och värme-produktion. Programmet var väldigt teoretiskt med mycket energiberäkningar som grund.
-               Efter utbildningen arbetade jag i fem år på domsjö-fabriker i Örnsköldsvik som processoperatör för massabrukets sodapannor. 2017 flyttade jag till Sundsvall och tog anställningen som processoperatör på SCA Östrand 
-               och därifrån är jag nu tjänstledig för mina nuvarande studier till webbutvecklare.
-            </p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">cloud</i></h2>
-            <h5 class="center">Mittuniversitetet - webbutveckling</h5>
-
-            <p class="light">2023 började jag mina studier i datateknik med inriktning mot webbutveckling. Jag slutför mina studier i juni 2025 och tar då en Högskoleexamen i datateknik.</p>
+  <!-- Section with heading in a parallaxing image and text-element -->
+  <section>
+    <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center">
+            <h3 class="header col s12 bold">Publicering</h3>
           </div>
         </div>
       </div>
-
+      <div class="parallax"><img src="background1.jpg" alt="Kopplingar på baksidan av ett kretskort."></div>
     </div>
-  </div>
 
+    <div class="container">
+      <div class="row center">
+        <p class="flow-text col s12 light">För publicering skulle vi göra en icke ftp publicering. Eftersom att vi redan
+          använt tjänster som Github-pages, Netlify och Render samt att jag har publicerat på Azure valde jag en egen
+          lösning som jag hoppas är godkänd. Men mer om detta på undersidan om publicering. och jag hoppas att det är en
+          godkänd lösning.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Section with heading in a parallaxing image and text-element -->
+  <section>
+    <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center">
+            <h3 class="header col s12 bold">Om mig</h3>
+          </div>
+        </div>
+      </div>
+      <div class="parallax"><img src="background3.jpg" alt="En bild av mig själv när jag vilar i solen."></div>
+    </div>
+
+    <div class="container">
+      <div class="section">
+
+        <!--   Icon Section   -->
+        <div class="row">
+          <article class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">functions</i></h2>
+              <h5 class="center">Teknikprogrammet gymnasiet</h5>
+
+              <p class="light">Jag läste teknikprogrammet på Gudlav Bilderskolan i Sollefteå. I programmet ingick mycket
+                matematik och hade en tydlig datateknisk inriktning.</p>
+            </div>
+          </article>
+
+          <article class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+              <h5 class="center">YH-Energiteknik</h5>
+
+              <p class="light">Efter gymnasiet läste jag en två-årig YH-utbildning till drifttekniker för kraft och
+                värme-produktion. Programmet var väldigt teoretiskt med mycket energiberäkningar som grund.
+                Efter utbildningen arbetade jag i fem år på domsjö-fabriker i Örnsköldsvik som processoperatör för
+                massabrukets sodapannor. 2017 flyttade jag till Sundsvall och tog anställningen som processoperatör på
+                SCA
+                Östrand
+                och därifrån är jag nu tjänstledig för mina nuvarande studier till webbutvecklare.
+              </p>
+            </div>
+          </article>
+
+          <article class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">cloud</i></h2>
+              <h5 class="center">Mittuniversitetet - webbutveckling</h5>
+
+              <p class="light">2023 började jag mina studier i datateknik med inriktning mot webbutveckling. Jag slutför
+                mina studier i juni 2025 och tar då en Högskoleexamen i datateknik.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer with email mail:to -->
   <footer class="page-footer grey darken-3">
     <div class="container">
       <div class="row">
         <div class="center">
           <h5 class="white-text">Kontakta mig</h5>
-          <a class="white-text" href="mailto:markus.vickman@hotmail.com"><i class="small material-icons">mail</i></a><br>
+          <a class="white-text" href="mailto:markus.vickman@hotmail.com"><i
+              class="small material-icons">mail</i></a><br>
           <a class="white-text" href="mailto:markus.vickman@hotmail.com">markus.vickman@hotmail.com</a>
-
         </div>
         <div class="col l3 s12">
         </div>
@@ -170,15 +191,12 @@
       </div>
     </div>
     <div class="footer-copyright">
- 
     </div>
   </footer>
-
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
-  </body>
+</body>
 </html>
